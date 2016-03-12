@@ -1,0 +1,17 @@
+<div class="container" id="main-form">
+  <div class="report">
+
+<h2>Edit Student</h2>
+
+    <%= form_for(@student, :id => "student-form") do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %><br><br>
+      <%= f.label :grade %>
+      <%= f.text_field :grade %><br><br>
+      <%= f.submit "Update Student" %>
+    <% end %>
+
+
+
+    </div>
+    </div>
