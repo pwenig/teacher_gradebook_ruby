@@ -20,6 +20,17 @@
       </tr>
       </thead>
       <tbody>
+
+      <% @students.each do |student| %>
+        <tr>
+          <td><%= student.name %></td>
+          <td><%= student.grade %></td>
+          <td><a href="#">
+            <span class="glyphicon glyphicon-remove"></span>
+          </a></td>
+        </tr>
+      <% end %>
+      
       <tr>
         <td>Add Student</td>
         <td></td>
