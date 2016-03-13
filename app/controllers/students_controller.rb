@@ -7,7 +7,6 @@ class StudentsController < ApplicationController
     find_maximum_grade
     find_average_grade
     @student = Student.new
-    set_student_status
   end
 
   def new
@@ -34,7 +33,6 @@ class StudentsController < ApplicationController
       end
     end
   end
-
 
   def destroy
     @student = Student.find(params[:id])
