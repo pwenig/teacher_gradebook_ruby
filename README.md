@@ -2,6 +2,7 @@ Grade Book is an easy to use Rails application that allows a teacher to enter a 
 along with his/her test score so they can see a summary of the class performance.
 The summary includes the min grade, max grade, and average grade.
 Students with a grade < 65 are highlighted.
+Student names and grades can be edited inline.
 
 ### To Install:
 1. Make sure you have Ruby and Bundler installed
