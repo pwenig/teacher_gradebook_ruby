@@ -2,17 +2,17 @@ class StudentsController < ApplicationController
 
   def index
     students = Student.all
-    @students = students.sort_by{ |k| k["name"] }
+    @students = students.sort_by { |k| k["name"] }
     find_minimum_grade
     find_maximum_grade
     find_average_grade
-    # set_student_status
+    @student = Student.new
+    set_student_status
   end
 
   def new
     @student = Student.new
   end
-
 
   def create
     @student = Student.new(student_params)
@@ -22,20 +22,19 @@ class StudentsController < ApplicationController
     end
   end
 
-  def show
-    @student = Student.find(params[:id])
-  end
-
-  def edit
-    @student = Student.find(params[:id])
-  end
+  respond_to :json
 
   def update
-    @student = Student.find(params[:id])
-    @student.update_attributes(name: params[:student][:name], grade: params[:student][:grade])
-    set_student_status
-    redirect_to root_path
+    @student = Student.find params[:id]
+    respond_to do |format|
+      if @student.update_attributes(student_params)
+        format.json { respond_with_bip(@student) }
+        set_student_status
+      else
+      end
+    end
   end
+
 
   def destroy
     @student = Student.find(params[:id])

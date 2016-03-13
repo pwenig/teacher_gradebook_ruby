@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'best_in_place', github: 'bernat/best_in_place'
 
 group :test do
   gem 'rspec-rails', '~> 3.3.3'
