@@ -16,7 +16,7 @@
         <tr style="background-color: <%= student.status %> ">
           <td><%= best_in_place student, :name %></td>
           <td><%= best_in_place student, :grade %></td>
-          <td id="edit-student"><%= link_to "Delete", student_path(student), :method => :delete %></td>
+          <td id="delete-student"><%= link_to "Delete", student_path(student), :method => :delete %></td>
         </tr>
       <% end %>
 
