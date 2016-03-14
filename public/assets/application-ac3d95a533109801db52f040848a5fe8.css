@@ -1,0 +1,47 @@
+/* line 1, /Users/paulwenig/Personal/teacher_gradebook_ruby/app/assets/stylesheets/students.css.scss */
+body {
+  padding-top: 50px;
+}
+
+/* line 5, /Users/paulwenig/Personal/teacher_gradebook_ruby/app/assets/stylesheets/students.css.scss */
+.report {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/* line 10, /Users/paulwenig/Personal/teacher_gradebook_ruby/app/assets/stylesheets/students.css.scss */
+#main-form {
+  margin-top: 50px;
+  background-color: cornflowerblue;
+  min-height: 700px;
+}
+
+/* line 17, /Users/paulwenig/Personal/teacher_gradebook_ruby/app/assets/stylesheets/students.css.scss */
+#report-table {
+  font-size: medium;
+}
+/* line 19, /Users/paulwenig/Personal/teacher_gradebook_ruby/app/assets/stylesheets/students.css.scss */
+#report-table th {
+  text-align: center;
+}
+
+/* line 26, /Users/paulwenig/Personal/teacher_gradebook_ruby/app/assets/stylesheets/students.css.scss */
+td#delete-student a {
+  color: black;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
